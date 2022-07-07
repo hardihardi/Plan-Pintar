@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Pintar</title>
+    <meta name="author" content="Hardihardi" />
+    <meta name="description" content="Pendidikan Adalah Tentang Keunggulan Akademik." />
+
+    <!--- favicon-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!--- custom css link-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!--- preload images-->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)" />
+    <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)" />
+  </head>
+
+  <body id="top">
+    <!--- #HEADER-->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="https://planpintar.netlify.app/" class="logo">
+          <img src="./assets/images/logo-light.png" alt="" />
+        </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="https://planpintar.netlify.app/" class="logo">
+              <img src="./assets/images/logo-light.png" alt="" />
+            </a>
+            <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#event" class="navbar-link" data-nav-toggler>Event</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <a href="#" class="header-action-btn login-btn">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            <span class="span">Login / Register</span>
+          </a>
+          <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <!--- #SEARCH BOX-->
+    <div class="search-container" data-search-box>
+      <div class="container">
+        <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="search-wrapper">
+          <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field" />
+          <button class="search-submit" aria-label="Submit" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <article>
+        <!--- #HERO-->
+        <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+          <div class="container">
+            <div class="hero-content">
+              <p class="section-subtitle">MASA DEPAN BELAJAR LEBIH BAIK BERSAMA KAMI</p>
+
+              <h2 class="h1 hero-title">Pendidikan Adalah Tentang Keunggulan Akademik</h2>
+
+              <p class="hero-text">Perdalam kemampuan desain dan code bersama expert di bidangnya serta dapatkan sertifikat resminya</p>
+
+              <a href="#" class="btn btn-primary">
+                <span class="span">Daftar & Free 6 Kelas</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <img src="./assets/images/hero-banner.png" width="500" height="500" loading="lazy" alt="hero image" class="w-100" />
+
+              <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true" class="abs-img abs-img-1" />
+
+              <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true" class="abs-img abs-img-2" />
+            </figure>
+          </div>
+        </section>
+
+        <!--- #CATEGORY-->
+        <section class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle">Start Learning Today</p>
+            <h2 class="h2 section-title">Temui Kelas Berdasarkan Kategori Yang Kami Sediakan</h2>
+            <ul class="grid-list">
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Personal Development</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="file-tray-full-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Human Research</a>
+                    </h3>
+
+                    <span class="card-meta">24 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Art & Design</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Business Management</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Web Development</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="thumbs-up-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Lifestyle</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Digital Marketing</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Data Sciences</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="medkit-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Health & Fitness</a>
+                    </h3>
+                    <span class="card-meta">39 Course</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #ABOUT-->
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img src="./assets/images/about-banner.jpg" width="450" height="590" loading="lazy" alt="about banner" class="w-100 about-img" />
+              <img src="./assets/images/about-abs-1.jpg" width="188" height="242" loading="lazy" aria-hidden="true" class="abs-img abs-img-1" />
+              <img src="./assets/images/about-abs-2.jpg" width="150" height="200" loading="lazy" aria-hidden="true" class="abs-img abs-img-2" />
+            </figure>
+            <div class="about-content">
+              <p class="section-subtitle">Why Choose Us</p>
+              <h2 class="h2 section-title">Platform Belajar Online Berkurikulum Internasional</h2>
+              <ul class="about-list">
+                <li class="about-item">
+                  <div class="item-icon item-icon-1">
+                    <img src="./assets/images/ic_studikasus.svg" width="30" height="30" loading="lazy" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 class="h3 item-title">Studi Kasus</h3>
+                    <p class="item-text">Bangun real-world project di bidang teknologi informasi.</p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="item-icon item-icon-2">
+                    <img src="./assets/images/ic_konsultasi.svg" width="30" height="30" loading="lazy" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 class="h3 item-title">Konsultasi</h3>
+                    <p class="item-text">Gabung dengan private group untuk berkonsultasi dengan mentor kelas.</p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="item-icon item-icon-3">
+                    <img src="./assets/images/ic_access.svg" width="30" height="30" loading="lazy" aria-hidden="true" />
+                  </div>
+
+                  <div>
+                    <h3 class="h3 item-title">Lifetime Access</h3>
+
+                    <p class="item-text">Mempelajari dan memahami materi kelas lebih santai tanpa batasan waktu.</p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="item-icon item-icon-3">
+                    <img src="./assets/images/ic_project.svg" width="30" height="30" loading="lazy" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 class="h3 item-title">Portfolio</h3>
+                    <p class="item-text">Pelajari dan miliki hasil karya untuk membangun karir impian.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--- #COURSE-->
+        <section class="section course" id="courses" aria-label="course" style="background-image: url('./assets/images/course-bg.jpg')">
+          <div class="container">
+            <p class="section-subtitle">Top Featured</p>
+            <h2 class="h2 section-title">Pilih Kelas Unggulan Untuk Tingkatkan Keahlian</h2>
+            <ul class="grid-list">
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-1.jpg" width="370" height="270" loading="lazy" alt="Competitive Strategy law for all students" class="img-cover" />
+                  </figure>
+                  <div class="card-actions">
+                    <span class="badge">Intermediate</span>
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">35 Pelajaran</span>
+                      </li>
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Full-Stack JavaScript Developer: Website Travel</a>
+                    </h3>
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(8,895)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Rp. 690,000</span>
+                        <del class="del">Rp. 990,000</del>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">47 Siswa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-2.jpg" width="370" height="270" loading="lazy" alt="Machine Learning A-Z: Hands-On Python and java" class="img-cover" />
+                  </figure>
+
+                  <div class="card-actions">
+                    <span class="badge">Advanced</span>
+
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="card-meta-text">25 Pelajaran</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Machine Learning A-Z: Hands-On Python and java</a>
+                    </h3>
+
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(9,887)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Free</span>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">100 Siswa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-3.jpg" width="370" height="270" loading="lazy" alt="Achieving Advanced in Insights with Big" class="img-cover" />
+                  </figure>
+                  <div class="card-actions">
+                    <span class="badge">Basic</span>
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">35 Pelajaran</span>
+                      </li>
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Mencapai Tingkat Lanjut dalam Wawasan dengan Big</a>
+                    </h3>
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(1,456)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Rp. 3.140.000</span>
+
+                        <del class="del">Rp. 890.000</del>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">42 Siswa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-4.jpg" width="370" height="270" loading="lazy" alt="Education Makes A Person A Responsible Citizen" class="img-cover" />
+                  </figure>
+                  <div class="card-actions">
+                    <span class="badge">Intermediate</span>
+
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">31 Pelajaran</span>
+                      </li>
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Pendidikan Membuat Seseorang Menjadi Warga Negara yang Bertanggung Jawab</a>
+                    </h3>
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(18 Review)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Rp. 490.000</span>
+                        <del class="del">Rp. 799.000</del>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">46 Siswa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-5.jpg" width="370" height="270" loading="lazy" alt="Building A Better World One Student At A Time" class="img-cover" />
+                  </figure>
+                  <div class="card-actions">
+                    <span class="badge">Advanced</span>
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">36 Pelajaran</span>
+                      </li>
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Pendidikan Membuat Seseorang Menjadi Warga Negara yang Bertanggung Jawab</a>
+                    </h3>
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(5,675)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Rp. 5.0000</span>
+                        <del class="del">Rp. 1.0000</del>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">91 Siswa</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/course-6.jpg" width="370" height="270" loading="lazy" alt="Education is About Forming Faithful Disciples" class="img-cover" />
+                  </figure>
+                  <div class="card-actions">
+                    <span class="badge">Basic</span>
+                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">21 Pelajaran</span>
+                      </li>
+                      <li class="card-meta-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                        <time datetime="PT18H15M44S" class="card-meta-text">18h 15m 44s</time>
+                      </li>
+                    </ul>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Pendidikan adalah Tentang Membentuk Murid yang Setia</a>
+                    </h3>
+                    <div class="rating-wrapper">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                      <span class="rating-text">(1,567)</span>
+                    </div>
+                    <div class="card-footer">
+                      <div class="card-price">
+                        <span class="span">Rp. 79.000</span>
+                        <del class="del">Rp. 109.000</del>
+                      </div>
+                      <div class="card-meta-item">
+                        <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                        <span class="card-meta-text">22 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">
+              <span class="span">All Courses</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </section>
+
+        <!--- #CTA-->
+        <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+          <div class="container">
+            <figure class="cta-banner">
+              <img src="./assets/images/cta-banner.jpg" width="580" height="380" loading="lazy" alt="cta banner" class="img-cover" />
+            </figure>
+            <div class="cta-content">
+              <p class="section-subtitle">Get Your Dream Job</p>
+              <h2 class="h2 section-title">Masih Bingung Untuk Mulai Dari Mana? Pelajari HandBook</h2>
+              <p class="section-text">Kami menyediakan HandBook sebagai panduan utama untuk Anda mengenal berbagai profesi yang tersedia di bidang design dan teknologi.</p>
+              <a href="#" class="btn btn-secondary">
+                <span class="span">Browse HandBook</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!--- #EVENT-->
+        <section class="section event" id="event" aria-label="event">
+          <div class="container">
+            <p class="section-subtitle">Upcomming Event</p>
+            <h2 class="h2 section-title">Mari Bergabung dengan Komunitas Kami</h2>
+            <ul class="grid-list">
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/event-1.jpg" width="370" height="250" loading="lazy" alt="Innovation & Technological Entrepreneurship Team" class="img-cover" />
+                  </figure>
+                  <time class="badge" datetime="2022-12-04">10 July 2022</time>
+                  <div class="card-content">
+                    <address class="card-address">
+                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">Jakarta, Indonesia</span>
+                    </address>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Tim Kewirausahaan Inovasi & Teknologi</a>
+                    </h3>
+                    <a href="#" class="btn-link">
+                      <span class="span">Get Ticket</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/event-2.jpg" width="370" height="250" loading="lazy" alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover" />
+                  </figure>
+                  <time class="badge" datetime="2022-10-30">12 Agust 2022</time>
+                  <div class="card-content">
+                    <address class="card-address">
+                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">Bekasi, Indonesia</span>
+                    </address>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Pameran Pekerjaan Freelance Virtual untuk Siswa</a>
+                    </h3>
+                    <a href="#" class="btn-link">
+                      <span class="span">Get Ticket</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/event-3.jpg" width="370" height="250" loading="lazy" alt="Explorations of Regional Chief Executive Network" class="img-cover" />
+                  </figure>
+                  <time class="badge" datetime="2022-09-18">18 Sep 2022</time>
+                  <div class="card-content">
+                    <address class="card-address">
+                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">Bandung, Indonesia</span>
+                    </address>
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Eksplorasi Jaringan Kepala Eksekutif Regional</a>
+                    </h3>
+                    <a href="#" class="btn-link">
+                      <span class="span">Get Ticket</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--- #NEWSLETTER-->
+        <section class="section newsletter" aria-label="newsletter" style="background-image: url('./assets/images/newsletter-bg.jpg')">
+          <div class="container">
+            <p class="section-subtitle">Subscribe Newsletter</p>
+            <h2 class="h2 section-title">Get Every Latest News</h2>
+            <form action="" class="newsletter-form">
+              <div class="input-wrapper">
+                <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required class="email-field" />
+                <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <span class="span">Subscribe</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--- #FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="https://planpintar.netlify.app/" class="logo">
+              <img src="./assets/images/logo-dark.png" alt="" />
+            </a>
+            <p class="section-text">Perdalam kemampuan desain dan kode bersama pakar di bidangnya serta dapatkan sertifikat resminya.</p>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">About Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Upcoming Events</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Blog & News</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">FAQ Question</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Testimonial</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Privacy Policy</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful Links</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Contact Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Pricing Plan</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Instructor Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+                <span class="span">FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Popular Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                <span class="span">Terms & Conditions</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <address class="footer-link">Jl. Jakarta Raya, Jakarta, Indonesia</address>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+              <a href="#" class="footer-link">(+62) 765-7839</a>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+              <a href="#" class="footer-link">(+62) 765-7840</a>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <a href="#" class="footer-link">contact@planpintar.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">Copyright 2022 Plan Pintar. All Rights Reserved by. <a href="https://www.hardianto.skom.id/" class="copyright-link">Hardianto</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!--- #BACK TO TOP-->
+    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!--- custom js link-->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!--- ionicon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
